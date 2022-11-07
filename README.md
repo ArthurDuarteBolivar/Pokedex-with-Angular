@@ -1,3 +1,34 @@
+<h1 align="center">Pokedex with angular</h1>
+
+
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+
+
+<br>
+
+
+## 🚀 Tecnologias
+
+This project was developed with the following technologies:
+
+- HTML e CSS
+- [Node e NPM](https://nodejs.org/)
+- [Angular](https://angular.io/)
+- [Bootstrap Angular](https://ng-bootstrap.github.io/#/home)
+
+## 💻 Projeto
+
+Tour of Heroes
+
+
+## :memo: Licença
+
+This project is under the Arthur Duarte Bolivar license.
+
 # Pokedex
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
