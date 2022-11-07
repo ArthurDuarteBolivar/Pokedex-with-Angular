@@ -1,5 +1,6 @@
 <h1 align="center">Pokedex with angular</h1>
 
+<p aling="center">Plataforma de listagem de Pokémons</p>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -8,6 +9,10 @@
 </p>
 
 
+<br>
+
+<img aling="center" src="https://raw.githubusercontent.com/ArthurDuarteBolivar/Pokedex-with-Angular/main/src/assets/img-site/home.png">
+<img aling="center" src="https://raw.githubusercontent.com/ArthurDuarteBolivar/Pokedex-with-Angular/main/src/assets/img-site/details.png">
 <br>
 
 
@@ -22,7 +27,9 @@ This project was developed with the following technologies:
 
 ## 💻 Projeto
 
-Tour of Heroes
+Desenvolver uma plataforma web para listagem e visualização de pokémons, para a construção deste projeto foi usado ReactJS. Todos os dados sobre os pokémons como nome, número, tipo, imagem e entre outras coisas, foram possíveis com o uso da API REST PokéApi.
+
+Esse projeto é uma inspiração de um app mobile sobre pokémons, tal layout foi criado a partir de um desafio proposto pela equipe do umpontoseis.
 
 
 ## :memo: Licença
