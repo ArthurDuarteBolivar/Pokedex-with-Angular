@@ -2,7 +2,11 @@
 @import '../../../config-scss/rem-calc.scss';
 
 :host {
+  *{
+    overflow: hidden;
+  }
 	main {
+    animation: allaAnimations 2s ease 200ms;
     margin: 0 10rem;
 		margin-top: rem-calc(40);
 
@@ -141,55 +145,6 @@
 	}
 }
 
-
-// main{
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin: auto;
-//   width: 900px;
-//   height: auto;
-// }
-
-// .pokemons_status_statistics{
-
-// }
-// div{
-//   min-width: 800px;
-//   background: white;
-//   border-top-left-radius: 10%;
-//   height: 65vh;
-//   border-top-right-radius: 10%;
-//   padding: 10px;
-// }
-
-// .slideInLeft{
-//   color: white;
-//   font-size: 4rem;
-//   text-transform: capitalize;
-// }
-// .pokemons_status_statistics{
-//   padding-top: 1rem;
-//   display: grid;
-//   grid-template-columns: 1fr;
-
-// }
-
-// .slideInDown{
-//   max-width: 300px;
-// }
-
-// .pokemons_names{
-//   display: flex;
-//   min-width: 800px;
-//   justify-content: space-around;
-// }
-// .icon{
-//   width: 100px;
-//   margin-left: 0px;
-//   padding-left: 20px;
-// }
 .btn:hover{
   animation: iconAnimate 1s ease infinite alternate;
 }
@@ -202,21 +157,11 @@
     margin-left: 10px;
   }
 }
-
-// ol{
-//   display: grid;
-//   grid-template-columns: 1fr ;
-// }
-
-
-
-// li{
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   place-items: start;
-//   margin-left: -2rem;
-// }
-
-// strong{
-//   margin-left: 3rem;
-// }
+@keyframes allaAnimations {
+  0%{
+    transform: translateX(-10000px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

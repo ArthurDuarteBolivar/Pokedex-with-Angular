@@ -18,18 +18,10 @@ import {
   styleUrls: ['./details.component.scss'],
   animations: [
     trigger('openClose', [
-      // ...
       state('open', style({
         opacity: 0,
         transform: "translateX(-1000px)"
       })),
-      state('closed', style({
-        opacity: 1,
-        transform: "translateX(0px)"
-      })),
-      transition('open => closed', [
-        animate('0.5s')
-      ]),
       transition('closed => open', [
         animate('0.5s')
       ]),

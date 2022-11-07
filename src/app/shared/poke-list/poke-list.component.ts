@@ -3,6 +3,7 @@ import { PokemonServiceService } from './../../service/pokemon-service.service';
 import { HttpClient } from '@angular/common/http';
 import { Poke, Result } from './../../interfaces/poke';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-poke-list',
@@ -38,6 +39,7 @@ ngOnInit(): void {
   }
   statusClosed() {
     this.newItemEvent.emit(this.isClose);
+
   }
 
 }

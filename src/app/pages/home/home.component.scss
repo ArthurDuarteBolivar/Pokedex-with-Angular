@@ -1,7 +1,12 @@
-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 600px;
+.content{
+  animation: contentAnimation 2s ease 200ms;
+}
+
+@keyframes contentAnimation {
+  from{
+    margin-right: -10000px;
+  }
+  to{
+    margin-right: 0;
+  }
 }

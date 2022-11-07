@@ -1,7 +1,7 @@
 <app-poke-search (emitSearch)="getSearch($event)"></app-poke-search>
 
 <div class="content">
-  <ng-template ngFor let-pokemon [ngForOf]="pokemons">
+  <ng-template ngFor let-pokemon [ngForOf]="pokemons" >
   <ol id="pokemonList" class="pokemons">
     <a (click)="statusClosed()" [routerLink]="['details', pokemon.status.id]">
     <li class="pokemon">

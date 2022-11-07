@@ -6,11 +6,13 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    data: {animation: 'HomePage'}
   },
   {
     path: "details/:id",
-    component: DetailsComponent
+    component: DetailsComponent,
+    data: {animation: "AboutPage"}
   }
 ];
 

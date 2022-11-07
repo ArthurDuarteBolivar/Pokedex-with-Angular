@@ -1,15 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../src/config-scss/variables.scss';
-@import '../src/config-scss/animation.scss';
 html{
   background: var(--primary-color);
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *{
-  overflow-x:hidden;
-  ::-webkit-scrollbar {
-    width: 0px;
-}
+  overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
 }
 @media  (min-width: 380px) {

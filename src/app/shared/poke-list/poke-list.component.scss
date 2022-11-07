@@ -4,6 +4,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
+  overflow: hidden;
 }
 
 .content{
@@ -121,6 +122,7 @@
 
 
 .pokemon{
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   margin: .5rem;
@@ -180,12 +182,13 @@ a{
 .content{
   place-items: center;
   margin-right: 30px;
+  overflow: hidden;
 }
 
 
 .pokemon:hover{
-  transform:translateY(3px);
-  transition: .5s;
+  transform: rotate(-1deg);
+  overflow: hidden;
 }
 
 
