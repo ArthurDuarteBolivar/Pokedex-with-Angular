@@ -1,0 +1,13 @@
+@import '../../../config-scss/variables.scss';
+
+input{
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 300px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,78 @@
+
+
+<!-- Header -->
+
+<main [@openClose]="isOpen ? 'open' : 'closed'">
+
+    <section class="pokemon__names">
+      <h1 class="slideInLeft">{{pokemons[0].name}}</h1>
+      <h2 class="slideInRight">{{pokemons[1].names[0].name}}</h2>
+    </section>
+
+    <section class="pokemon__status">
+      <img
+        [src]="pokemons[0].sprites.other.dream_world.front_default"
+        [alt]="pokemons[0].name"
+        class="slideInDown"
+      >
+
+      <article class="pokemon__status__statistics fadeIn">
+        <section>
+          <h3>Estatísticas</h3>
+
+          <ol>
+            <li *ngFor="let value of pokemons[0].stats">
+                {{ value.stat.name }}
+
+              <strong>
+                {{ value.base_stat }}
+              </strong>
+            </li>
+          </ol>
+        </section>
+
+
+        <mat-icon (click)="back()" class="btn btn__secondary" aria-hidden="false" aria-label="Example home icon" fontIcon="keyboard_backspace"></mat-icon>
+      </article>
+    </section>
+
+  <img
+    src="assets/error.png"
+    alt="Deu erro na mostragem do pokemon"
+    width="100%"
+    *ngIf="apiError"
+  >
+</main>
+
+<!-- Header
+<app-poke-header></app-poke-header>
+<main  [@openClose]="isOpen ? 'open' : 'closed'">
+  <section class="pokemons_names">
+    <h1   class="slideInLeft">{{pokemons[0].name}}</h1>
+    <img   [src]="pokemons[0].sprites.other.dream_world.front_default" [alt]="pokemons[0].name" class="slideInDown">
+  </section>
+  <div>
+
+  <section class="pokemons_status">
+
+    <article class="pokemons_status_statistics fadeIn">
+      <section>
+        <h3>Estatísticas</h3>
+
+        <ol>
+          <li *ngFor="let value of pokemons[0].stats">
+            {{ value.stat.name }}
+
+            <strong>
+              {{ value.base_stat }}
+            </strong>
+          </li>
+        </ol>
+      </section>
+
+       <mat-icon (click)="back()" class="icon" aria-hidden="false" aria-label="Example home icon" fontIcon="keyboard_backspace"></mat-icon>
+    </article>
+  </section>
+</div>
+  <img src="" alt="Deu erro na mostragem do pokemons" width="100%" *ngIf="apiError">
+</main> -->

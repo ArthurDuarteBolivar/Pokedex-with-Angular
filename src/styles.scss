@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../src/config-scss/variables.scss';
+@import '../src/config-scss/animation.scss';
+html{
+  background: var(--primary-color);
+  box-sizing: border-box;
+}
+*{
+  overflow-x:hidden;
+  ::-webkit-scrollbar {
+    width: 0px;
+}
+  font-family: 'Roboto', sans-serif;
+}
+@media  (min-width: 380px) {
+  body{
+      color: black;
+      background: none;
+  }
+}
+
+@media  (min-width: 576px) {
+  body{
+      color: black;
+      background: none;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
